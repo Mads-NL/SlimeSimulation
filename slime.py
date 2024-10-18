@@ -9,17 +9,18 @@ class SlimeSimulation(Scene):
     def construct(self):
         """Constructs the slime simulation, initializing parameters and running the simulation loop."""
         
-        moveSpeed = 10  # Speed at which agents move
+        moveSpeed = 1  # Speed at which agents move
         deltaTime = 0.1  # Time increment for each update
-        N = 1000  # Number of simulation steps
-        width = 200  # Width of the simulation area
-        height = int(width * 16 / 9)  # Height of the simulation area, maintaining a 16:9 aspect ratio
+        N = 2000  # Number of simulation steps
+        width = 100  # Width of the simulation area
+        height = 100  # Height of the simulation area
         DrawMap = np.zeros((width, height))  # 2D array representing the environment
-        nrAgents = 700  # Number of agents in the simulation
+        population_percentage = 0.1
+        nrAgents = int(population_percentage * width * height)  # Number of agents in the simulation
         evaporateSpeed = 0.1  # Rate at which the environment "evaporates"
-        sensorOffsetDst = 5  # Distance from the agent to the sensor center
+        sensorOffsetDst = 9  # Distance from the agent to the sensor center
         sensorSize = 4  # Size of the sensor area
-        sensorAngleSpacing = 0.78  # Angle spacing for sensor detection
+        sensorAngleSpacing = np.radians(22.5)  # Angle spacing for sensor detection
         turnSpeed = 2.5  # Speed of agent turning
         diffuseFaktor = 0.4  # Factor for diffusion in the environment
 

@@ -17,7 +17,7 @@ The **Slime Simulation** is an interactive 2D simulation that models the behavio
 ## Example
 Here's a short video demonstrating the slime simulation in action:
 
-[![Slime Simulation Example](https://img.youtube.com/vi/yneMnuO9lvI/0.jpg)](https://youtu.be/yneMnuO9lvI)
+[![Slime Simulation Example](https://img.youtube.com/vi/oXoff2CrFfA/0.jpg)](https://youtu.be/oXoff2CrFfA)
 
 *Click the image above to watch the video!*
 
